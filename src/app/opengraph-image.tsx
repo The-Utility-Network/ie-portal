@@ -58,15 +58,14 @@ export default async function Image() {
                     alignItems: 'flex-end',
                     justifyContent: 'center',
                     padding: '40px 260px 40px 40px',
-                    boxShadow: 'inset 2px 2px 20px rgba(127, 44, 255, 0.2)',
-                    background: 'rgba(127, 44, 255, 0.1)'
+                    boxShadow: 'inset 2px 2px 20px rgba(255,255,255,0.1)',
+                    background: 'rgba(0,0,0,0.45)', // Darker base for better text contrast
                 }}>
-                    <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.3)' }} />
-                    <div style={{ position: 'absolute', inset: 0, border: '2px solid rgba(127, 44, 255, 0.3)', borderRight: 'none', borderRadius: '40px 0 0 40px' }} />
+                    <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)', borderRight: 'none', borderRadius: '40px 0 0 40px' }} />
 
                     <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', zIndex: 10 }}>
-                        <div style={{ fontSize: 42, fontWeight: 700, color: 'white', lineHeight: 1.2, textAlign: 'right', textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}>
-                            “Any sufficiently advanced technology is indistinguishable from magic.”
+                        <div style={{ fontSize: 44, fontWeight: 700, color: 'white', lineHeight: 1.2, textAlign: 'right', textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}>
+                            “Supporting the brave in their invisible battles.”
                         </div>
                         <div style={{
                             fontSize: 24,
@@ -77,7 +76,7 @@ export default async function Image() {
                             letterSpacing: '0.1em',
                             textShadow: '0 2px 20px black'
                         }}>
-                            — Arthur C. Clarke
+                            — THE UTILITY FOUNDATION
                         </div>
                     </div>
                 </div>
@@ -96,20 +95,19 @@ export default async function Image() {
                     alignItems: 'flex-start',
                     justifyContent: 'center',
                     padding: '40px 40px 40px 240px',
-                    boxShadow: 'inset -2px 2px 20px rgba(127, 44, 255, 0.2)',
-                    background: 'rgba(127, 44, 255, 0.1)'
+                    boxShadow: 'inset -2px 2px 20px rgba(255,255,255,0.1)',
+                    background: 'rgba(0,0,0,0.45)', // Darker base for better text contrast
                 }}>
-                    <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.3)' }} />
-                    <div style={{ position: 'absolute', inset: 0, border: '2px solid rgba(127, 44, 255, 0.4)', borderLeft: 'none', borderRadius: '0 40px 40px 0' }} />
+                    <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)', borderLeft: 'none', borderRadius: '0 40px 40px 0' }} />
 
                     <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', zIndex: 10 }}>
-                        <div style={{ fontSize: 44, color: 'white', fontWeight: 300, lineHeight: 1.2, display: 'flex', flexDirection: 'column', maxWidth: 640, textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}>
-                            <span style={{ fontWeight: 700 }}>INDUSTRIAL TOKENIZATION</span>
-                            <span>Automation & Logic Portal</span>
+                        <div style={{ fontSize: 48, color: 'white', fontWeight: 300, lineHeight: 1.1, display: 'flex', flexDirection: 'column', maxWidth: 640, textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}>
+                            <span style={{ fontWeight: 700 }}>VETERANS INITIATIVE</span>
+                            <span>Mental Wellness Support</span>
                         </div>
                         <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 12, borderLeft: `6px solid ${THEME}`, paddingLeft: 30 }}>
-                            <span style={{ fontSize: 24, color: '#D1D5DB', letterSpacing: '0.15em', fontWeight: 500, textShadow: '0 2px 10px black' }}>VRMINT ECOSYSTEM</span>
-                            <span style={{ fontSize: 24, color: THEME, letterSpacing: '0.15em', fontWeight: 700, textShadow: '0 2px 10px black' }}>portal.ie.theutilityfoundation.org/</span>
+                            <span style={{ fontSize: 24, color: '#D1D5DB', letterSpacing: '0.15em', fontWeight: 500, textShadow: '0 2px 10px black' }}>INVISIBLE ENEMIES</span>
+                            <span style={{ fontSize: 24, color: THEME, letterSpacing: '0.15em', fontWeight: 700, textShadow: '0 2px 10px black' }}>ie.theutilityfoundation.org</span>
                         </div>
                     </div>
                 </div>
