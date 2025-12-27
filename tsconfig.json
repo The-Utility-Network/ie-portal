@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,7 +15,7 @@
     "target": "ES2020", // Or "ES2021" or "ESNext"
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -19,9 +23,16 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
-    "types": ["node", "json-schema", "offscreencanvas", "webxr"]
+    "types": [
+      "node",
+      "json-schema",
+      "offscreencanvas",
+      "webxr"
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -30,7 +41,10 @@
     ".next/types/**/*.ts",
     "declarations.d.ts",
     "components/**/*.tsx",
-    "primitives/**/*.tsx"
+    "primitives/**/*.tsx",
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

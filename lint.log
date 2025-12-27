@@ -1,0 +1,26 @@
+﻿
+> vrmint@0.1.0 lint
+> next lint
+
+npm : Invalid 
+project directory 
+provided, no such 
+directory: 
+I:\VRMint\v4 
+Portals\iehome\lint
+At line:1 char:1
++ npm run lint 2>&1 
+| Out-File -Encoding 
+UTF8 lint.log
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Invalid   
+  project...als\i    
+ehome\lint:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 

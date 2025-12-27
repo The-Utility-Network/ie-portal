@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import VRScene from './VRScene';
+import dynamic from 'next/dynamic';
+const VRScene = dynamic(() => import('./VRScene'), { ssr: false });
 import PortalHUD from './PortalHUD';
 import AnalyzePanel from './Analyze';
 import Directory from './Directory';

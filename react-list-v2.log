@@ -1,0 +1,187 @@
+﻿vrmint@0.1.0 I:\VRMint\v4 Portals\iehome
+├─┬ @headlessui/react@2.2.9
+│ ├─┬ @floating-ui/react@0.26.28
+│ │ ├─┬ @floating-ui/react-dom@2.1.6
+│ │ │ └── react@19.2.3 deduped
+│ │ └── react@19.2.3 deduped
+│ ├─┬ @react-aria/focus@3.21.3
+│ │ ├─┬ @react-aria/utils@3.32.0
+│ │ │ ├─┬ @react-stately/utils@3.11.0
+│ │ │ │ └── react@19.2.3 deduped
+│ │ │ └── react@19.2.3 deduped
+│ │ ├─┬ @react-types/shared@3.32.1
+│ │ │ └── react@19.2.3 deduped
+│ │ └── react@19.2.3 deduped
+│ ├─┬ @react-aria/interactions@3.26.0
+│ │ ├─┬ @react-aria/ssr@3.9.10
+│ │ │ └── react@19.2.3 deduped
+│ │ └── react@19.2.3 deduped
+│ ├─┬ @tanstack/react-virtual@3.13.13
+│ │ └── react@19.2.3 deduped
+│ ├── react@19.2.3 deduped
+│ └─┬ use-sync-external-store@1.6.0
+│   └── react@19.2.3 deduped
+├─┬ @heroicons/react@2.1.3
+│ └── react@19.2.3 deduped
+├─┬ @react-three/drei@10.7.7
+│ ├─┬ @use-gesture/react@10.3.1
+│ │ └── react@19.2.3 deduped
+│ ├── react@19.2.3 deduped
+│ ├─┬ suspend-react@0.1.3
+│ │ └── react@19.2.3 deduped
+│ ├─┬ tunnel-rat@0.1.2
+│ │ └─┬ zustand@4.5.2
+│ │   ├── react@19.2.3 deduped
+│ │   └─┬ use-sync-external-store@1.2.0
+│ │     └── react@19.2.3 deduped
+│ └─┬ zustand@5.0.9
+│   └── react@19.2.3 deduped
+├─┬ @react-three/fiber@9.4.2
+│ ├─┬ its-fine@2.0.0
+│ │ └── react@19.2.3 deduped
+│ ├─┬ react-reconciler@0.31.0
+│ │ └── react@19.2.3 deduped
+│ ├─┬ react-use-measure@2.1.7
+│ │ └── react@19.2.3 deduped
+│ └── react@19.2.3 deduped
+├─┬ @react-three/xr@6.6.28
+│ ├─┬ @pmndrs/xr@6.6.28
+│ │ ├─┬ @iwer/devui@1.1.2
+│ │ │ ├─┬ @fortawesome/react-fontawesome@0.2.2
+│ │ │ │ └── react@19.2.3 deduped
+│ │ │ ├─┬ @pmndrs/handle@6.6.28
+│ │ │ │ └─┬ zustand@4.5.7
+│ │ │ │   └── react@19.2.3 deduped
+│ │ │ ├── react@19.2.3 deduped
+│ │ │ └─┬ styled-components@6.1.19
+│ │ │   └── react@19.2.3 deduped
+│ │ └─┬ zustand@4.5.7
+│ │   └── react@19.2.3 deduped
+│ ├── react@19.2.3 deduped
+│ └─┬ zustand@4.5.7
+│   └── react@19.2.3 deduped
+├─┬ html-react-parser@5.2.11
+│ └── react@19.2.3 deduped
+├─┬ next@16.1.1
+│ ├── react@19.2.3 deduped
+│ └─┬ styled-jsx@5.1.6
+│   └── react@19.2.3 deduped
+├─┬ react-dnd@16.0.1
+│ └── react@19.2.3 deduped
+├─┬ react-dom@19.2.3
+│ └── react@19.2.3 deduped
+├─┬ react-icons@5.3.0
+│ └── react@19.2.3 deduped
+├─┬ react-markdown@10.1.0
+│ └── react@19.2.3 deduped
+├─┬ react-syntax-highlighter@16.1.0
+│ └── react@19.2.3 deduped
+├─┬ react-use-gesture@9.1.3
+│ └── react@19.2.3 deduped
+├─┬ react-use@17.5.0
+│ ├─┬ nano-css@5.6.2
+│ │ └── react@19.2.3 deduped
+│ ├─┬ react-universal-interface@0.6.2
+│ │ └── react@19.2.3 deduped
+│ └── react@19.2.3 deduped
+├─┬ react-xarrows@2.0.2
+│ └── react@19.2.3 deduped
+├── react@19.2.3
+├─┬ recharts@3.6.0
+│ ├─┬ @reduxjs/toolkit@2.11.2
+│ │ └── react@19.2.3 deduped
+│ ├─┬ react-redux@9.2.0
+│ │ └── react@19.2.3 deduped
+│ └── react@19.2.3 deduped
+└─┬ thirdweb@5.116.1
+  ├─┬ @emotion/react@11.14.0
+  │ ├─┬ @emotion/use-insertion-effect-with-fallbacks@1.2.0
+  │ │ └── react@19.2.3 deduped
+  │ └── react@19.2.3 deduped
+  ├─┬ @emotion/styled@11.14.1
+  │ └── react@19.2.3 deduped
+  ├─┬ @radix-ui/react-dialog@1.1.14
+  │ ├─┬ @radix-ui/react-compose-refs@1.1.2
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-context@1.1.2
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-dismissable-layer@1.1.10
+  │ │ ├─┬ @radix-ui/react-use-escape-keydown@1.1.1
+  │ │ │ └── react@19.2.3 deduped
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-focus-guards@1.1.2
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-id@1.1.1
+  │ │ ├─┬ @radix-ui/react-use-layout-effect@1.1.1
+  │ │ │ └── react@19.2.3 deduped
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-portal@1.1.9
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-presence@1.1.4
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-primitive@2.1.3
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-slot@1.2.3
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-use-controllable-state@1.2.2
+  │ │ ├─┬ @radix-ui/react-use-effect-event@0.0.2
+  │ │ │ └── react@19.2.3 deduped
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ react-remove-scroll@2.7.2
+  │ │ ├─┬ react-remove-scroll-bar@2.3.8
+  │ │ │ └── react@19.2.3 deduped
+  │ │ ├─┬ react-style-singleton@2.2.3
+  │ │ │ └── react@19.2.3 deduped
+  │ │ ├── react@19.2.3 deduped
+  │ │ ├─┬ use-callback-ref@1.3.3
+  │ │ │ └── react@19.2.3 deduped
+  │ │ └─┬ use-sidecar@1.1.3
+  │ │   └── react@19.2.3 deduped
+  │ └── react@19.2.3 deduped
+  ├─┬ @radix-ui/react-focus-scope@1.1.7
+  │ ├─┬ @radix-ui/react-use-callback-ref@1.1.1
+  │ │ └── react@19.2.3 deduped
+  │ └── react@19.2.3 deduped
+  ├─┬ @radix-ui/react-icons@1.3.2
+  │ └── react@19.2.3 deduped
+  ├─┬ @radix-ui/react-tooltip@1.2.7
+  │ ├─┬ @radix-ui/react-popper@1.2.7
+  │ │ ├─┬ @radix-ui/react-arrow@1.1.7
+  │ │ │ └── react@19.2.3 deduped
+  │ │ ├─┬ @radix-ui/react-use-rect@1.1.1
+  │ │ │ └── react@19.2.3 deduped
+  │ │ ├─┬ @radix-ui/react-use-size@1.1.1
+  │ │ │ └── react@19.2.3 deduped
+  │ │ └── react@19.2.3 deduped
+  │ ├─┬ @radix-ui/react-visually-hidden@1.2.3
+  │ │ └── react@19.2.3 deduped
+  │ └── react@19.2.3 deduped
+  ├─┬ @tanstack/react-query@5.81.5
+  │ └── react@19.2.3 deduped
+  ├─┬ input-otp@1.4.2
+  │ └── react@19.2.3 deduped
+  ├── react@19.2.3 deduped
+  └─┬ x402@0.7.0
+    └─┬ wagmi@2.19.5
+      ├─┬ @wagmi/connectors@6.2.0
+      │ ├─┬ @base-org/account@2.4.0
+      │ │ └─┬ zustand@5.0.3
+      │ │   └── react@19.2.3 deduped
+      │ ├─┬ @coinbase/wallet-sdk@4.3.6
+      │ │ └─┬ zustand@5.0.3
+      │ │   └── react@19.2.3 deduped
+      │ ├─┬ @walletconnect/ethereum-provider@2.21.1
+      │ │ └─┬ @reown/appkit@1.7.8
+      │ │   └─┬ valtio@1.13.2
+      │ │     ├── react@19.2.3 deduped
+      │ │     └─┬ use-sync-external-store@1.2.0
+      │ │       └── react@19.2.3 deduped
+      │ └─┬ porto@0.2.35
+      │   └── react@19.2.3 deduped
+      ├─┬ @wagmi/core@2.22.1
+      │ └─┬ zustand@5.0.0
+      │   └── react@19.2.3 deduped
+      ├── react@19.2.3 deduped
+      └─┬ use-sync-external-store@1.4.0
+        └── react@19.2.3 deduped
+

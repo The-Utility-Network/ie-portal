@@ -1,0 +1,22 @@
+﻿npx : error: unknown 
+option '--dir'
+At line:1 char:1
++ npx next lint 
+--dir src --dir 
+components 2>&1 | 
+Out-File -Encoding 
+UT ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (error:    
+ unknown option '    
+--dir':String) [    
+], RemoteExcepti    
+on
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 

@@ -17,7 +17,8 @@ import Directory from "./Directory"; // Import the Directory component
 import Mythology from "./Mythology"; // Import the Mythology component
 import Principles from "./Principles"; // Import the Principles component
 import Reserve from "./Reserve"; // Import the Reserve component
-import DiamondRings from "./DiamondRings";
+import dynamic from "next/dynamic";
+const DiamondRings = dynamic(() => import("./DiamondRings"), { ssr: false });
 
 
 // Define the structure of a Facet

@@ -1,0 +1,68 @@
+﻿
+> vrmint@0.1.0 build
+> next build
+
+▲ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local, .env
+
+  Creating an optimized production build ...
+npm : (node:62680) 
+ExperimentalWarning: 
+Type Stripping is an 
+experimental feature 
+and might change at 
+any time
+At line:1 char:1
++ npm run build 2>&1 
+| Out-File -Encoding 
+UTF8 
+build-next16-v11.log
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ((node:6   
+ 2680) Ex...nge a    
+t any time:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+(Use `node 
+--trace-warnings 
+...` to show where 
+the warning was 
+created)
+✓ Compiled successfully in 25.0s
+  Running TypeScript ...
+  Collecting page data using 23 workers ...
+  Generating static pages using 23 workers (0/8) ...
+  Generating static pages using 23 workers (2/8) 
+  Generating static pages using 23 workers (4/8) 
+  Generating static pages using 23 workers (6/8) 
+✓ Generating static pages using 23 workers (8/8) in 1011.0ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/agent/stream
+├ ƒ /api/alchemy/collection
+├ ƒ /api/alchemy/floor
+├ ƒ /api/alchemy/metadata
+├ ƒ /api/alchemy/owners
+├ ƒ /api/chat
+├ ƒ /api/chat/stream
+├ ƒ /api/config
+├ ƒ /api/explorer/abi
+├ ƒ /api/explorer/account
+├ ƒ /api/explorer/name
+├ ƒ /api/reserve-data
+├ ƒ /api/reservoir/floor
+└ ƒ /api/thirdweb/client
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -1,0 +1,22 @@
+﻿npx : Invalid 
+project directory 
+provided, no such 
+directory: 
+I:\VRMint\v4 
+Portals\iehome\lint
+At line:1 char:1
++ npx next lint 2>&1 
+| Out-File -Encoding 
+UTF8 lint-v2.log
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Invalid   
+  project...als\i    
+ehome\lint:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 

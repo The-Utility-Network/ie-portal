@@ -129,11 +129,14 @@ const Chatbot: React.FC<ChatbotProps> = ({
     [key: string]: any;
   }
 
-  const markdownComponents: Partial<Components> = {
-    code: ({ inline, className, children, ...props }: CustomCodeProps) => {
+  const markdownComponents: any = {
+    code(props: any) {
+      const { children, className, node, ...rest } = props;
       const match = /language-(\w+)/.exec(className || "");
+      const isInline = !match;
       const codeString = String(children).replace(/\n$/, "");
       const codeKey = `${className || 'inline'}-${codeString.slice(0, 16)}`;
+
       const handleCopyCode = () => {
         navigator.clipboard.writeText(codeString);
         setCopiedCodeIdx(codeKey);
@@ -141,16 +144,16 @@ const Chatbot: React.FC<ChatbotProps> = ({
       };
       const lineCount = codeString.split('\n').length;
 
-      return inline ? (
-        <code className="inline-code" {...props}>{children}</code>
-      ) : match ? (
+      return isInline ? (
+        <code className="inline-code" {...rest}>{children}</code>
+      ) : (
         lineCount === 1 ? (
-          <code className="inline-code" {...props}>{codeString.trim()}</code>
+          <code className="inline-code" {...rest}>{codeString.trim()}</code>
         ) : (
           <div className="codeblock-container my-4">
             <SyntaxHighlighterComponent
               style={vscDarkPlus}
-              language={match[1] === "sol" ? "solidity" : match[1]}
+              language={match ? (match[1] === "sol" ? "solidity" : match[1]) : "text"}
               PreTag="div"
               customStyle={{
                 background: 'rgba(5, 5, 10, 0.6)',
@@ -165,7 +168,12 @@ const Chatbot: React.FC<ChatbotProps> = ({
                 padding: '12px',
                 width: '100%',
               }}
-              {...props}
+              codeTagProps={{
+                style: {
+                  fontFamily: MONO_FONT_FAMILY,
+                  background: 'none',
+                }
+              }}
             >
               {codeString}
             </SyntaxHighlighterComponent>
@@ -183,8 +191,6 @@ const Chatbot: React.FC<ChatbotProps> = ({
             )}
           </div>
         )
-      ) : (
-        <code className="inline-code" {...props}>{children}</code>
       );
     },
   };

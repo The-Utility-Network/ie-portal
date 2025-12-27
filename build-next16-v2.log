@@ -1,0 +1,92 @@
+﻿
+> vrmint@0.1.0 build
+> next build
+
+▲ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local, .env
+
+  Creating an optimized production build ...
+npm : (node:53032) 
+ExperimentalWarning: Type 
+Stripping is an 
+experimental feature and 
+might change at any time
+At line:1 char:1
++ npm run build 2>&1 | 
+Out-File -Encoding UTF8 
+build-next16-v2.log
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecifi    ed: 
+((node:53032)     Ex...nge 
+at any ti    me:String) [], 
+Rem    oteException
+    + FullyQualifiedEr    
+rorId : NativeComm    
+andError
+ 
+(Use `node --trace-warnings 
+...` to show where the 
+warning was created)
+✓ Compiled successfully in 93s
+  Running TypeScript ...
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  The following mandatory changes were made to your tsconfig.json:
+
+  	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+Failed to compile.
+
+./components/Chatbot.tsx:133
+:5
+Type error: Object literal 
+may only specify known 
+properties, and 'code' does 
+not exist in type 'Partial<P
+artial<Components>>'.
+
+[0m [90m 131 |[39m
+ [90m 132 |[39m   
+[36mconst[39m markdownComp
+onents[33m:[39m [33mParti
+al[39m[33m<[39m[33mCompo
+nents[39m[33m>[39m 
+[33m=[39m {
+[31m[1m>[22m[39m[90m 
+133 |[39m     
+code[33m:[39m ({ 
+inline[33m,[39m 
+className[33m,[39m 
+children[33m,[39m 
+[33m...[39mprops 
+}[33m:[39m 
+[33mCustomCodeProps[39m) 
+[33m=>[39m {
+ [90m     |[39m     
+[31m[1m^[22m[39m
+ [90m 134 |[39m       
+[36mconst[39m match 
+[33m=[39m [35m/language-(
+\w+)/[39m[33m.[39mexec(cl
+assName [33m||[39m 
+[32m""[39m)[33m;[39m
+ [90m 135 |[39m       
+[36mconst[39m codeString 
+[33m=[39m [33mString[39m
+(children)[33m.[39mreplace
+([35m/\n$/[39m[33m,[39m 
+[32m""[39m)[33m;[39m
+ [90m 136 |[39m       
+[36mconst[39m codeKey 
+[33m=[39m 
+[32m`${className || 'inline
+'}-${codeString.slice(0, 
+16)}`[39m[33m;[39m[0m
+Next.js build worker exited 
+with code: 1 and signal: 
+null

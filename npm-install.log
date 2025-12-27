@@ -1,0 +1,60 @@
+﻿npm : npm error code 
+ERESOLVE
+At line:1 char:1
++ npm install 2>&1 | 
+Out-File -Encoding UTF8 
+npm-install.log
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (npm e  
+  rror code ERESOLVE:Stri   
+ ng) [], RemoteException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+npm error ERESOLVE unable 
+to resolve dependency tree
+npm error
+npm error While resolving: 
+vrmint@0.1.0
+npm error Found: 
+eslint@8.57.1
+npm error 
+node_modules/eslint
+npm error   dev eslint@"^8" 
+from the root project
+npm error
+npm error Could not resolve 
+dependency:
+npm error peer 
+eslint@">=9.0.0" from 
+eslint-config-next@16.1.1
+npm error node_modules/eslin
+t-config-next
+npm error   dev 
+eslint-config-next@"16.1.1" 
+from the root project
+npm error
+npm error Fix the upstream 
+dependency conflict, or 
+retry
+npm error this command with 
+--force or 
+--legacy-peer-deps
+npm error to accept an 
+incorrect (and potentially 
+broken) dependency 
+resolution.
+npm error
+npm error
+npm error For a full report 
+see:
+npm error C:\Users\skyne\App
+Data\Local\npm-cache\_logs\2
+025-12-27T03_44_36_347Z-eres
+olve-report.txt
+npm error A complete log of 
+this run can be found in: C:
+\Users\skyne\AppData\Local\n
+pm-cache\_logs\2025-12-27T03
+_44_36_347Z-debug-0.log

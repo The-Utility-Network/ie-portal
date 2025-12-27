@@ -1,0 +1,82 @@
+﻿▲ Next.js 16.1.1 (webpack)
+- Environments: .env.local, .env
+
+  Creating an optimized production build ...
+npx : (node:48892) 
+ExperimentalWarning: 
+Type Stripping is an 
+experimental feature 
+and might change at 
+any time
+At line:1 char:1
++ npx next build 
+--webpack 2>&1 | 
+Out-File -Encoding 
+UTF8 build-next16- 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ((node:4   
+ 8892) Ex...nge a    
+t any time:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+(Use `node 
+--trace-warnings 
+...` to show where 
+the warning was 
+created)
+✓ Compiled successfully in 58s
+  Running TypeScript ...
+  Collecting page data using 23 workers ...
+  Generating static pages using 23 workers (0/8) ...
+  Generating static pages using 23 workers (2/8) 
+  Generating static pages using 23 workers (4/8) 
+Error occurred 
+prerendering page 
+"/". Read more: https
+://nextjs.org/docs/me
+ssages/prerender-erro
+r
+TypeError: Cannot 
+read properties of 
+undefined (reading 'R
+eactCurrentBatchConfi
+g')
+    at a.exports 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+app\page.js:468:10874
+)
+    at <unknown> 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+app\page.js:401:26139
+9)
+    at 14375 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+app\page.js:401:26396
+5)
+    at Object.g [as 
+require] 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+webpack-runtime.js:1:
+151) {
+  digest: 
+'3829770849'
+}
+Export encountered 
+an error on /page: 
+/, exiting the build.
+⨯ Next.js build 
+worker exited with 
+code: 1 and signal: 
+null

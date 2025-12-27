@@ -35,14 +35,15 @@ export function DropdownButton<T extends React.ElementType = typeof Button>(
   return <HeadlessMenuButton as={Button} {...props} />
 }
 
-export function DropdownMenu({ anchor = 'bottom', ...props }: HeadlessMenuItemsProps) {
+export function DropdownMenu({ anchor = 'bottom', className, ...props }: { className?: string } & HeadlessMenuItemsProps) {
   return (
     <HeadlessTransition leave="duration-100 ease-in" leaveTo="opacity-0">
       <HeadlessMenuItems
         {...props}
         anchor={anchor}
         className={clsx(
-          props.className,
+          className,
+
 
           // Anchor positioning
           '[--anchor-gap:theme(spacing.2)] [--anchor-padding:theme(spacing.3)] data-[anchor~=end]:[--anchor-offset:4px] data-[anchor~=start]:[--anchor-offset:-4px]',
@@ -70,14 +71,18 @@ export function DropdownMenu({ anchor = 'bottom', ...props }: HeadlessMenuItemsP
   )
 }
 
-export function DropdownItem(props: { href?: string } & HeadlessMenuItemProps<'button'>) {
+export function DropdownItem({
+  className,
+  ...props
+}: { className?: string; href?: string } & HeadlessMenuItemProps<'button'>) {
   return (
     <HeadlessMenuItem
       as={props.href ? Link : 'button'}
       type={props.href ? undefined : 'button'}
       {...props}
       className={clsx(
-        props.className,
+        className,
+
 
         // Base styles
         'group cursor-default rounded-lg px-3.5 py-2.5 focus:outline-none sm:px-3 sm:py-1.5',

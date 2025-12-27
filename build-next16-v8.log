@@ -1,0 +1,78 @@
+﻿
+> vrmint@0.1.0 build
+> next build
+
+▲ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local, .env
+
+  Creating an optimized production build ...
+npm : (node:28132) 
+ExperimentalWarning: 
+Type Stripping is an 
+experimental feature 
+and might change at 
+any time
+At line:1 char:1
++ npm run build 2>&1 
+| Out-File -Encoding 
+UTF8 
+build-next16-v8.log
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ((node:2   
+ 8132) Ex...nge a    
+t any time:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+(Use `node 
+--trace-warnings 
+...` to show where 
+the warning was 
+created)
+✓ Compiled successfully in 85s
+  Running TypeScript ...
+Failed to compile.
+
+./components/core/fie
+ldset.tsx:31:9
+Type error: Argument 
+of type 'unknown' is 
+not assignable to 
+parameter of type 
+'ClassValue'.
+
+[0m [90m 29 |[39m 
+      data[33m-[39m
+slot[33m=[39m[32m"
+legend"[39m
+ [90m 30 |[39m     
+  className[33m=[39
+m{clsx(
+[31m[1m>[22m[39m
+[90m 31 |[39m       
+  props[33m.[39mcla
+ssName[33m,[39m
+ [90m    |[39m     
+    
+[31m[1m^[22m[39m
+ [90m 32 |[39m     
+    
+[32m'text-base/6 
+font-semibold 
+text-zinc-950 data-[d
+isabled]:opacity-50 
+sm:text-sm/6 
+dark:text-white'[39m
+ [90m 33 |[39m     
+  )}
+ [90m 34 |[39m     
+[33m/[39m[33m>[39
+m[0m
+Next.js build worker 
+exited with code: 1 
+and signal: null

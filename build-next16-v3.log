@@ -1,0 +1,98 @@
+﻿
+> vrmint@0.1.0 build
+> next build
+
+▲ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local, .env
+
+  Creating an optimized production build ...
+npm : (node:37000) 
+ExperimentalWarning: 
+Type Stripping is an 
+experimental feature 
+and might change at 
+any time
+At line:1 char:1
++ npm run build 2>&1 
+| Out-File -Encoding 
+UTF8 
+build-next16-v3.log
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ((node:3   
+ 7000) Ex...nge a    
+t any time:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+(Use `node 
+--trace-warnings 
+...` to show where 
+the warning was 
+created)
+✓ Compiled successfully in 24.7s
+  Running TypeScript ...
+  Collecting page data using 23 workers ...
+  Generating static pages using 23 workers (0/8) ...
+  Generating static pages using 23 workers (2/8) 
+  Generating static pages using 23 workers (4/8) 
+Error occurred 
+prerendering page 
+"/". Read more: https
+://nextjs.org/docs/me
+ssages/prerender-erro
+r
+TypeError: Cannot 
+read properties of 
+undefined (reading 'R
+eactCurrentBatchConfi
+g')
+    at b.exports 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+chunks\ssr\_ea4f83fa.
+_.js:1:188863)
+    at <unknown> 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+chunks\ssr\_ea4f83fa.
+_.js:343:272187)
+    at module 
+evaluation 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+chunks\ssr\_ea4f83fa.
+_.js:343:274753)
+    at 
+instantiateModule 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+chunks\ssr\[turbopack
+]_runtime.js:740:9)
+    at getOrInstantia
+teModuleFromParent 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+chunks\ssr\[turbopack
+]_runtime.js:763:12)
+    at Context.common
+JsRequire [as r] 
+(I:\VRMint\v4 Portals
+\iehome\.next\server\
+chunks\ssr\[turbopack
+]_runtime.js:249:12) 
+{
+  digest: 
+'3382610213'
+}
+Export encountered 
+an error on /page: 
+/, exiting the build.
+⨯ Next.js build 
+worker exited with 
+code: 1 and signal: 
+null
