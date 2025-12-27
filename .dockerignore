@@ -1,0 +1,14 @@
+/node_modules
+/.next
+/.git
+/.turbo
+/.cache
+/.vscode
+/.idea
+/.DS_Store
+npm-debug.log*
+yarn-error.log*
+coverage
+dist
+*.local
+.env*
