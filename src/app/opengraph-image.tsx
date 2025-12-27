@@ -109,7 +109,7 @@ export default async function Image() {
                         </div>
                         <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 12, borderLeft: `6px solid ${THEME}`, paddingLeft: 30 }}>
                             <span style={{ fontSize: 24, color: '#D1D5DB', letterSpacing: '0.15em', fontWeight: 500, textShadow: '0 2px 10px black' }}>VRMINT ECOSYSTEM</span>
-                            <span style={{ fontSize: 24, color: THEME, letterSpacing: '0.15em', fontWeight: 700, textShadow: '0 2px 10px black' }}>theutilityfoundation.org/ie</span>
+                            <span style={{ fontSize: 24, color: THEME, letterSpacing: '0.15em', fontWeight: 700, textShadow: '0 2px 10px black' }}>portal.ie.theutilityfoundation.org/</span>
                         </div>
                     </div>
                 </div>
