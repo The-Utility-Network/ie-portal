@@ -10,7 +10,7 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://theutilityfoundation.org/ie"),
+  metadataBase: new URL("https://portal.ie.theutilityfoundation.org/"),
   title: "Invisible Enemies: Supporting Veterans and Mental Wellness",
   description: "Empowering veterans and communities through mental wellness support and camaraderie.",
   manifest: "/manifest.webmanifest",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "Invisible Enemies is a veteran-focused community dedicated to raising awareness about mental health challenges, including PTSD, depression, and anxiety. Our mission is to create a supportive, fun, and financially empowering environment where veterans and their supporters can thrive together. Join us as we work towards building a future where no one fights their battles alone.",
     type: "website",
-    url: "https://theutilityfoundation.org/ie",
+    url: "https://portal.ie.theutilityfoundation.org/",
   },
   twitter: {
     card: "summary_large_image",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Invisible Enemies",
   },
   alternates: {
-    canonical: "https://theutilityfoundation.org/ie",
+    canonical: "https://portal.ie.theutilityfoundation.org/",
   },
 };
 
