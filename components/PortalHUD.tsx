@@ -72,7 +72,7 @@ const PortalHUD: React.FC<PortalHUDProps> = ({ onNavigate, currentView }) => {
     return (
         <>
             {/* TOP STATUS BAR */}
-            <div className="fixed top-0 left-0 w-full z-[2000] px-3 md:px-6 py-2 flex justify-between items-center pointer-events-none">
+            <div className="fixed top-[env(safe-area-inset-top,0px)] left-0 w-full z-[2000] px-3 md:px-6 py-2 flex justify-between items-center pointer-events-none">
                 {/* Left: System Status */}
                 <div className="flex items-center space-x-2 md:space-x-4 pointer-events-auto">
                     <div className="flex flex-col">
