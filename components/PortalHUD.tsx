@@ -77,7 +77,7 @@ const PortalHUD: React.FC<PortalHUDProps> = ({ onNavigate, currentView }) => {
                 <div className="flex items-center space-x-2 md:space-x-4 pointer-events-auto">
                     <div className="flex flex-col">
                         <span className="hidden md:block text-xs font-mono text-white tracking-widest opacity-80">SYS.ONLINE</span>
-                        <span className="text-sm md:text-md font-bold text-white tracking-widest font-mono">IE//PORTAL</span>
+                        <span className="text-sm md:text-md font-bold text-white tracking-widest font-mono">IE<span className="text-purple-400">{'//'}</span>PORTAL</span>
                     </div>
                 </div>
 

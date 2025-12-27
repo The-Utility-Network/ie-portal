@@ -4,7 +4,7 @@ import ReactMarkdown, { Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import vscDarkPlus from "react-syntax-highlighter/dist/esm/styles/prism/vsc-dark-plus";
 
 // Fix for SyntaxHighlighter type compatibility
 const SyntaxHighlighterComponent = SyntaxHighlighter as any;
@@ -232,7 +232,7 @@ const Chatbot: React.FC<ChatbotProps> = ({
         <div className="p-4 border-b border-purple-400/20 bg-purple-900/30 flex items-center justify-between">
           <h2 className="text-xl font-bold tracking-widest text-white flex items-center gap-2">
             <CpuChipIcon className="w-5 h-5 text-purple-400" />
-            ZYNATHRA<span className="text-purple-400">//</span>AI
+            ZYNATHRA<span className="text-purple-400">{'//'}</span>AI
           </h2>
           <div className="flex gap-1">
             <div className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse" />

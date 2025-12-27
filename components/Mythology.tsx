@@ -349,7 +349,7 @@ export default function Mythology() {
           <div className="absolute top-0 left-0 w-1 h-full bg-purple-500" />
           <h1 className="text-xl lg:text-2xl font-bold tracking-tight text-white flex items-center gap-2 relative z-10">
             <BookOpenIcon className="w-5 h-5 lg:w-6 lg:h-6 text-purple-400" />
-            LORE<span className="text-purple-400">//</span>DB
+            LORE<span className="text-purple-400">{'//'}</span>DB
           </h1>
           <button onClick={() => setIsNavOpen(false)} className="lg:hidden p-2 text-gray-500 hover:text-white">
             <XMarkIcon className="w-6 h-6" />
@@ -452,7 +452,7 @@ export default function Mythology() {
                 <div className="flex items-center gap-4">
                   <CommandLineIcon className="w-5 h-5 text-white" />
                   <h2 className="text-xs font-bold tracking-widest text-white uppercase">
-                    Workshop <span className="text-white">//</span> {workshopMode}
+                    Workshop <span className="text-white">{'//'}</span> {workshopMode}
                   </h2>
                 </div>
                 {/* Mode Selector Tabs */}

@@ -1,0 +1,109 @@
+﻿
+> vrmint@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.3
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+npm : (node:59548) 
+ExperimentalWarning: Type 
+Stripping is an 
+experimental feature and 
+might change at any time
+At line:1 char:1
++ npm run build 2>&1 | 
+Out-File -Encoding UTF8 
+build11.log
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: ((node  
+  :59548) Ex...nge at any   
+  time:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+(Use `node --trace-warnings 
+...` to show where the 
+warning was created)
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+./components/core/avatar.tsx
+49:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/DiamondRings.tsx
+267:6  Warning: React Hook useMemo has missing dependencies: 'facetNames' and 'isMobileView'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/fiatMintButton.tsx
+237:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+252:23  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+265:23  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Header.tsx
+66:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+107:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Learn.tsx
+212:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+239:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+314:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/MintForm.tsx
+349:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Mythology.tsx
+97:6  Warning: React Hook useEffect has a missing dependency: 'fetchStories'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+106:6  Warning: React Hook useEffect has a missing dependency: 'checkPublisherRole'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+665:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+779:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/PortalHUD.tsx
+185:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/SelectionBar.tsx
+92:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+131:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/VRbg.tsx
+159:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+159:13  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/9) ...
+   Generating static pages (2/9) 
+   Generating static pages (4/9) 
+   Generating static pages (6/9) 
+ ✓ Generating static pages (9/9)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    1.31 MB        1.44 MB
+├ ○ /_not-found                          882 B           102 kB
+├ ƒ /api/agent/stream                    0 B                0 B
+├ ƒ /api/alchemy/collection              0 B                0 B
+├ ƒ /api/alchemy/floor                   0 B                0 B
+├ ƒ /api/alchemy/metadata                0 B                0 B
+├ ƒ /api/alchemy/owners                  0 B                0 B
+├ ƒ /api/chat                            0 B                0 B
+├ ƒ /api/chat/stream                     0 B                0 B
+├ ƒ /api/config                          0 B                0 B
+├ ƒ /api/explorer/abi                    0 B                0 B
+├ ƒ /api/explorer/account                0 B                0 B
+├ ƒ /api/explorer/name                   0 B                0 B
+├ ƒ /api/reserve-data                    0 B                0 B
+├ ƒ /api/reservoir/floor                 0 B                0 B
+└ ƒ /api/thirdweb/client                 0 B                0 B
++ First Load JS shared by all            101 kB
+  ├ chunks/47023-9e3cb182ac87885d.js     31.6 kB
+  ├ chunks/fd9d1056-f482f3b37086ce51.js  53.6 kB
+  ├ chunks/webpack-57a8c58f2befd414.js   15.3 kB
+  └ other shared chunks (total)          230 B
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -1,16 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Typography,
-  Button,
-  Box,
-  useMediaQuery,
-  useTheme,
-} from '@mui/material';
-import { ExpandMore as ExpandMoreIcon } from '@mui/icons-material';
-import { styled } from '@mui/material/styles';
+import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import {
   getContract,
   readContract,
@@ -21,6 +10,7 @@ import {
 import { useActiveWallet } from 'thirdweb/react';
 import { base } from 'thirdweb/chains';
 import { getDiamondAddress } from '../primitives/Diamond';
+
 // Browser-safe Thirdweb client getter (fetches clientId from API)
 let principlesClientCache: any | null = null;
 async function getThirdwebBrowserClient() {
@@ -70,71 +60,6 @@ const principleColors = [
   'rgba(255, 205, 86, 0.2)',   // Another Light Yellow
 ];
 
-// Styled components with glassmorphism effect
-const StyledAccordion = styled(Accordion)(({ theme }) => ({
-  backgroundColor: 'rgba(255, 255, 255, 0.1)',
-  backdropFilter: 'blur(10px)',
-  color: '#FFFFFF',
-  marginBottom: theme.spacing(1),
-  borderRadius: '12px',
-  border: '1px solid rgba(255, 255, 255, 0.2)',
-  boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-  '&::before': {
-    display: 'none',
-  },
-}));
-
-const StyledAccordionSummary = styled(AccordionSummary)(({ theme }) => ({
-  '& .MuiAccordionSummary-content': {
-    display: 'flex',
-    alignItems: 'center',
-    gap: theme.spacing(2),
-  },
-}));
-
-const StyledAccordionDetails = styled(AccordionDetails)(({ theme, expanded }: { theme: any, expanded: boolean }) => ({
-  backgroundColor: expanded ? 'rgba(255, 255, 255, 0.15)' : 'transparent',
-  backdropFilter: 'blur(8px)',
-  borderRadius: '0 0 12px 12px',
-  padding: theme.spacing(2),
-  transition: 'background-color 0.3s ease',
-}));
-
-const StyledButton = styled(Button)(({ theme }) => ({
-  backgroundColor: '#F54029',
-  color: '#FFFFFF',
-  '&:hover': {
-    backgroundColor: '#D03824',
-  },
-  marginTop: theme.spacing(2),
-  borderRadius: '24px',
-  padding: '12px 24px',
-  fontSize: '16px',
-  minWidth: '150px',
-}));
-
-const CustomInput = styled('input')(({ theme }) => ({
-  backgroundColor: 'rgba(255, 255, 255, 0.2)',
-  backdropFilter: 'blur(8px)',
-  color: '#FFFFFF',
-  border: '1px solid rgba(255, 255, 255, 0.3)',
-  borderRadius: '8px',
-  padding: '12px 16px',
-  width: '100%',
-  maxWidth: '400px',
-  marginTop: '10px',
-  fontSize: '16px',
-  outline: 'none',
-  transition: 'border 0.3s ease',
-  '&:focus': {
-    border: '1px solid #F54029',
-  },
-}));
-
-const StyledTypography = styled(Typography)(({ theme }) => ({
-  color: '#FFFFFF',
-}));
-
 const OperatingPrinciples = () => {
   const [principles, setPrinciples] = useState<any[]>([]);
   const [signerCount, setSignerCount] = useState<number>(0);
@@ -144,10 +69,6 @@ const OperatingPrinciples = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | false>(false);
 
   const wallet = useActiveWallet()?.getAccount() as any;
-
-  // Responsive hooks
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   useEffect(() => {
     fetchPrinciples();
@@ -263,127 +184,96 @@ const OperatingPrinciples = () => {
     }
   };
 
-  const handleAccordionChange = (index: number) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-    setExpandedIndex(isExpanded ? index : false);
-  };
-
   if (loading) {
-    return <StyledTypography variant="h6">Loading Operating Principles...</StyledTypography>;
+    return <div className="text-white text-xl text-center mt-20 font-bold animate-pulse">Loading Operating Principles...</div>;
   }
 
   return (
-    <Box
-      sx={{
-        backgroundColor: 'rgba(128, 80, 128, 0.85)',
-        backdropFilter: 'blur(10px)',
-        maxHeight: isMobile ? '75vh' : '100vh',
-        marginTop: isMobile ? '150px' : '40px',
-        borderRadius: '40px',
-        padding: isMobile ? 2 : 4,
-        color: '#FFFFFF',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        overflowY: 'auto',
-      }}
+    <div
+      className="flex flex-col items-center overflow-y-auto backdrop-blur-md bg-[#805080]/85 rounded-[40px] p-4 md:p-8 mt-36 md:mt-10 max-h-[75vh] md:max-h-screen text-white scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent"
     >
-      <StyledTypography variant={isMobile ? "h4" : "h3"} gutterBottom align="center">
+      <h3 className="text-3xl md:text-5xl font-bold mb-2 text-center drop-shadow-lg">
         Invisible Enemies Operating Principles
-      </StyledTypography>
-      <StyledTypography variant="subtitle1" gutterBottom align="center">
+      </h3>
+      <h6 className="text-lg md:text-xl mb-8 text-center opacity-90 font-mono">
         Total Signers: {signerCount}
-      </StyledTypography>
+      </h6>
 
-      <Box
-        sx={{
-          width: '100%',
-          maxWidth: '800px',
-        }}
-      >
-        {principles.map((principle: { japaneseName: any; englishName: any; description: any; }, index: number) => (
-          <StyledAccordion
-            key={index}
-            expanded={expandedIndex === index}
-            onChange={handleAccordionChange(index)}
-            sx={{
-              backgroundColor: expandedIndex === index ? principleColors[index % principleColors.length] : 'rgba(255, 255, 255, 0.1)',
-              transition: 'background-color 0.1s ease',
-            }}
-          >
-            <StyledAccordionSummary
-              expandIcon={<ExpandMoreIcon style={{ color: '#FFFFFF' }} />}
+      <div className="w-full max-w-[800px] flex flex-col gap-2">
+        {principles.map((principle: { japaneseName: any; englishName: any; description: any; }, index: number) => {
+          const isExpanded = expandedIndex === index;
+          const bgColor = isExpanded ? principleColors[index % principleColors.length] : 'rgba(255, 255, 255, 0.08)';
+
+          return (
+            <div
+              key={index}
+              className={`rounded-xl border border-white/20 shadow-lg overflow-hidden transition-all duration-300 backdrop-blur-sm ${isExpanded ? 'bg-opacity-50' : 'hover:bg-white/10'}`}
+              style={{ backgroundColor: bgColor }}
             >
-              <Box display="flex" flexDirection="column">
-                <StyledTypography variant="h6">
-                  {principle.japaneseName} - {principle.englishName}
-                </StyledTypography>
-              </Box>
-            </StyledAccordionSummary>
-            <StyledAccordionDetails expanded={expandedIndex === index} theme={undefined}>
-              <StyledTypography variant="body1">
-                {principle.description}
-              </StyledTypography>
-            </StyledAccordionDetails>
-          </StyledAccordion>
-        ))}
-      </Box>
+              <button
+                onClick={() => setExpandedIndex(isExpanded ? false : index)}
+                className="w-full flex items-center justify-between p-4 text-left focus:outline-none"
+              >
+                <div className="flex flex-col">
+                  <h6 className="text-lg md:text-xl font-medium drop-shadow-md">
+                    {principle.japaneseName} - {principle.englishName}
+                  </h6>
+                </div>
+                <ChevronDownIcon
+                  className={`w-6 h-6 text-white transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
+                />
+              </button>
 
-      {!hasAccepted ? (
-        <Box
-          mt={4}
-          sx={{
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            backdropFilter: 'blur(10px)',
-            borderRadius: '16px',
-            padding: isMobile ? 2 : 4,
-            maxWidth: '600px',
-            width: '100%',
-            textAlign: 'center',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.37)',
-          }}
-        >
-          <StyledTypography variant={isMobile ? "h5" : "h4"} gutterBottom>
-            Uphold Our Values
-          </StyledTypography>
-          <StyledTypography variant="body1" gutterBottom>
-            By signing, you commit to embodying and upholding our operating principles. Your dedication ensures that we maintain excellence, integrity, and a harmonious work environment.
-          </StyledTypography>
-          <StyledTypography variant="body1" gutterBottom>
-            Please enter your name below to signify your acceptance and commitment.
-          </StyledTypography>
-          <CustomInput
-            type="text"
-            placeholder="Enter your name"
-            value={userName}
-            onChange={(e: { target: { value: any; }; }) => setUserName(e.target.value)}
-          />
-          <StyledButton onClick={handleAcceptPrinciples}>
-            Sign Principles
-          </StyledButton>
-        </Box>
-      ) : (
-        <Box
-          mt={4}
-          sx={{
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            backdropFilter: 'blur(10px)',
-            borderRadius: '16px',
-            padding: isMobile ? 2 : 4,
-            maxWidth: '600px',
-            width: '100%',
-            textAlign: 'center',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.37)',
-          }}
-        >
-          <StyledTypography variant={isMobile ? "h5" : "h4"} color="success.main" gutterBottom>
-            Thank You for Signing!
-          </StyledTypography>
-          <StyledTypography variant="body1">
-            Your commitment to our operating principles strengthens our company&apos;s foundation and fosters a culture of excellence and integrity.
-          </StyledTypography>
-        </Box>
-      )}
-    </Box>
+              <div
+                className={`transition-all duration-300 ease-in-out overflow-hidden ${isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
+              >
+                <div className="p-4 pt-2 border-t border-white/10 bg-black/10 text-gray-100 leading-relaxed text-base md:text-lg rounded-b-xl">
+                  {principle.description}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="mt-12 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:p-10 w-full max-w-[600px] text-center shadow-[0_8px_32px_rgba(0,0,0,0.37)]">
+        {!hasAccepted ? (
+          <div className="flex flex-col items-center">
+            <h4 className="text-2xl md:text-4xl font-bold mb-4 drop-shadow-md">
+              Uphold Our Values
+            </h4>
+            <p className="mb-4 text-gray-200 leading-relaxed text-sm md:text-base">
+              By signing, you commit to embodying and upholding our operating principles. Your dedication ensures that we maintain excellence, integrity, and a harmonious work environment.
+            </p>
+            <p className="mb-6 text-gray-200 font-medium">
+              Please enter your name below to signify your acceptance and commitment.
+            </p>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              className="w-full max-w-[400px] bg-white/20 backdrop-blur-md text-white border border-white/30 rounded-xl px-5 py-3 text-base outline-none focus:border-[#F54029] focus:bg-white/30 transition-all mb-6 placeholder-white/50 text-center font-bold shadow-inner"
+            />
+            <button
+              onClick={handleAcceptPrinciples}
+              className="bg-[#F54029] hover:bg-[#D03824] text-white rounded-full px-8 py-3 text-lg font-bold min-w-[200px] transition-all transform hover:scale-105 shadow-xl hover:shadow-[#F54029]/40"
+            >
+              Sign Principles
+            </button>
+          </div>
+        ) : (
+          <div className="flex flex-col items-center">
+            <h4 className="text-2xl md:text-4xl font-bold mb-4 text-green-400 drop-shadow-md">
+              Thank You for Signing!
+            </h4>
+            <p className="text-gray-100 leading-relaxed text-lg">
+              Your commitment to our operating principles strengthens our company&apos;s foundation and fosters a culture of excellence and integrity.
+            </p>
+          </div>
+        )}
+      </div>
+    </div>
   );
 };
 

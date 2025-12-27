@@ -18,7 +18,7 @@ import Mythology from "./Mythology"; // Import the Mythology component
 import Principles from "./Principles"; // Import the Principles component
 import Reserve from "./Reserve"; // Import the Reserve component
 import DiamondRings from "./DiamondRings";
-import DiamondRings from "./DiamondRings";
+
 
 // Define the structure of a Facet
 interface Facet {
@@ -225,9 +225,9 @@ const ZOOM_STEP = 0.2; // Zoom step for in/out
 // Spotlight removed
 
 interface AnalyzePanelProps {
-  directoryFacetAddress: string;
-  p0: string;
-  cache: any;
+  directoryFacetAddress?: string;
+  p0?: string;
+  cache?: any;
 }
 
 // Loading Animation Component (Tube-like ring with emerging nodes)
@@ -316,9 +316,9 @@ const LoadingAnimation: React.FC = () => {
 
 // Main Component
 const AnalyzePanel: React.FC<AnalyzePanelProps> = ({
-  directoryFacetAddress,
-  p0,
-  cache,
+  directoryFacetAddress = "",
+  p0 = "",
+  cache = { contractNames: {}, methodNames: {}, abis: {} },
 }) => {
   const [viewDiamondViewer, setViewDiamondViewer] = useState(true); // Default to true for NET view
   const [viewDirectory, setViewDirectory] = useState(false);
