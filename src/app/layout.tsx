@@ -10,6 +10,7 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://theutilityfoundation.org/ie"),
   title: "Invisible Enemies: Supporting Veterans and Mental Wellness",
   description: "Empowering veterans and communities through mental wellness support and camaraderie.",
   manifest: "/manifest.webmanifest",
@@ -22,33 +23,22 @@ export const metadata: Metadata = {
     description:
       "Invisible Enemies is a veteran-focused community dedicated to raising awareness about mental health challenges, including PTSD, depression, and anxiety. Our mission is to create a supportive, fun, and financially empowering environment where veterans and their supporters can thrive together. Join us as we work towards building a future where no one fights their battles alone.",
     type: "website",
-    url: "https://invisibleenemiesofficial.io",
-    images: [
-      {
-        url: "https://storage.googleapis.com/tgl_cdn/MegaServerParty/IE.png",
-        width: 1200,
-        height: 630,
-        alt: "Invisible Enemies Banner",
-      },
-    ],
+    url: "https://theutilityfoundation.org/ie",
   },
   twitter: {
     card: "summary_large_image",
     title: "Invisible Enemies: Empowering Veterans and Mental Wellness",
     description:
       "Join Invisible Enemies, a community supporting veterans through mental wellness, fun, and financial independence. Together, we can raise awareness and ensure that no one fights their invisible battles alone.",
-    images: [
-      {
-        url: "https://storage.googleapis.com/tgl_cdn/MegaServerParty/IE.png",
-        alt: "Invisible Enemies Banner",
-      },
-    ],
   },
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
     title: "Invisible Enemies",
-  }
+  },
+  alternates: {
+    canonical: "https://theutilityfoundation.org/ie",
+  },
 };
 
 export default function RootLayout({
